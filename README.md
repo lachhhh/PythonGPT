@@ -10,6 +10,9 @@ This piece of software has the built in feature to speak out what you want it to
 
 ![image](https://user-images.githubusercontent.com/106557220/222302922-0ad2f167-20b5-4e73-8744-690f6f6b58c3.png)
 
+![image](https://user-images.githubusercontent.com/106557220/222314356-d3f77c8f-8305-4aee-aa63-ffc7a37d8e38.png)
+
+
 This currently is in beta so dont expect it to work immediatly.
 
 ***Customizeable tones***
