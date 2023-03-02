@@ -22,3 +22,9 @@ When you download the file there will be a text document that has a scentance th
 
 ***Modoration***
 This is still moderated and still has a filter on what you can ask but there is most certainly workarounds for it and ways to bypass or recode it to do what you want. But for the use of releasing I am releasing this as Moderated.
+
+
+
+***BETA***
+
+This is still in beta and wont work as of the time i am writing this but i should have it working very soon. You can also download it and make it yourself if you want.
