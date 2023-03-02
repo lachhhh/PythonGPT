@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import font
 import threading
 import speech_recognition as sr
-openai.api_key = "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"
+openai.api_key = "put key here"
 
 def send_message():
     pass
