@@ -11,13 +11,8 @@ tkinter - $pip install tk
 
 
 
-
-
-
-
-
-
-
+***2023 Information.***
+This version of chat gpt has 2023 information and better interface.
 
 
 
@@ -47,11 +42,21 @@ When you download the file there will be a text document that has a scentance th
 ***Modoration***
 This is still moderated and still has a filter on what you can ask but there is most certainly workarounds for it and ways to bypass or recode it to do what you want. But for the use of releasing I am releasing this as Moderated.
 
+(Update, this no longer has moderation and no filter)
+
+
+***Customizeable settings***
+It has a customizeable settings menu where you can change the prompt you are using and also you can use the settings menu to change the temperature and you can also change the token it is using and it can also change the max tokens (length) of the responces.
+
+
+
+***No filter***
+The messages that it replies with but unless it is seriously horrible it will be blocked but other than that that it should work
 
 
 ***BETA***
 
-This is still in beta and wont work as of the time i am writing this but i should have it working very soon. You can also download it and make it yourself if you want.
+This is still in beta.
 
 
 
@@ -59,3 +64,8 @@ This is still in beta and wont work as of the time i am writing this but i shoul
 
 ***Extra images***
 ![image](https://user-images.githubusercontent.com/106557220/222314252-2947624c-5811-4dfb-ba52-1f53c62dfeb5.png)
+
+
+
+
+
