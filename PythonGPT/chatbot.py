@@ -9,7 +9,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 
-openai.api_key = ('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')
+openai.api_key = ('')
 def gpt3_completion(prompt, engine='text-davinci-002', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['JAX:', 'USER:']):
     prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
     response = openai.Completion.create(
