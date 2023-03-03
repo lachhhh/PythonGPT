@@ -58,6 +58,8 @@ The messages that it replies with but unless it is seriously horrible it will be
 
 This is still in beta.
 
+Join discord at https://discord.gg/ssp5Utf7Gz
+
 
 
 
