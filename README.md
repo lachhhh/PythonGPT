@@ -62,6 +62,17 @@ Join discord at https://discord.gg/ssp5Utf7Gz
 
 
 
+***discord bot***
+This is a feature i had just recently implemented and it is same stuff but a discord bot.  I am not going to publicaly release the code for this as i had put lots of effort and it has all of my keys in it but you can invite the bot using the uAuth link here. 
+https://discord.com/api/oauth2/authorize?client_id=1081326872765415516&permissions=8&scope=bot
+
+It can also generate some pretty basic images and i find that cool and you can use the gpt ai to ask it to change the picture slightly
+![image](https://user-images.githubusercontent.com/106557220/222872663-5ffdb9a3-8ff2-4764-83ae-215d63853319.png)
+![image](https://user-images.githubusercontent.com/106557220/222872680-291e9570-bf03-4890-be83-051fc72f5cd1.png)
+![image](https://user-images.githubusercontent.com/106557220/222872695-4fe6f879-df11-4020-9a79-95b6bb7c829f.png)
+
+
+
 
 
 ***Extra images***
