@@ -4,9 +4,23 @@ import threading
 import time
 import speech_recognition as sr
 import pyttsx3
+import atexit
 
 # Initialize the engine
 engine = pyttsx3.init()
+
+chatlog = []
+
+def save_chatlog():
+    with open("chatlog.txt", "w") as file:
+        for line in chatlog:
+            file.write(line + "\n")
+
+def log_message(message):
+    chatlog.append(message)
+
+atexit.register(save_chatlog)
+
 
 
 openai.api_key = ('')
@@ -54,6 +68,7 @@ def send_message():
     chat_history.config(state=tk.NORMAL)
     chat_history.insert(tk.END, "Chatbot: " + chatbot_response + "\n")
     chat_history.config(state=tk.DISABLED)
+    log_message(message)
 
 
 
@@ -182,3 +197,7 @@ def logout():
     root.config(menu=menu_bar)
 root.mainloop()
 menu_bar.mainloop()
+with open('chat_log.txt', 'w') as f:
+    for item in chat_log:
+        f.write("%s\n" % item)
+print(chatlog)
