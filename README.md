@@ -15,6 +15,10 @@ tkinter - $pip install tk
 This version of chat gpt has 2023 information and better interface.
 
 
+***Voice from ai***
+This uses text from the ai and uses a tts module to convert it to sound
+
+
 
 
 ![image](https://user-images.githubusercontent.com/106557220/222302631-6dfa3c1e-46ab-43ee-af05-928f38fecc25.png)
