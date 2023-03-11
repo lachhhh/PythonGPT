@@ -9,7 +9,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 
-openai.api_key = ('')
+openai.api_key = ('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')
 def gpt3_completion(prompt, engine='text-davinci-002', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0, stop=['JAX:', 'USER:']):
     prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
     response = openai.Completion.create(
@@ -54,6 +54,8 @@ def send_message():
     chat_history.config(state=tk.NORMAL)
     chat_history.insert(tk.END, "Chatbot: " + chatbot_response + "\n")
     chat_history.config(state=tk.DISABLED)
+
+
 
 
 def start_listening():
@@ -130,4 +132,53 @@ def send_message():
     chat_history.config(state=tk.NORMAL)
     chat_history.insert(tk.END, "Chatbot: " + chatbot_response + "\n")
     chat_history.config(state=tk.DISABLED)
+
+def login():
+    # create a new toplevel window for login
+     login_window = tk.Toplevel(root)
+    
+    # add login widgets to the window
+     tk.Label(login_window, text="Username").grid(row=0, column=0)
+     username_entry = tk.Entry(login_window)
+     username_entry.grid(row=0, column=1)
+    
+     tk.Label(login_window, text="Password").grid(row=1, column=0)
+     password_entry = tk.Entry(login_window, show="*")
+     password_entry.grid(row=1, column=1)
+    
+def submit_login():
+        # store the login credentials and close the window
+        username = username_entry.get()
+        password = password_entry.get()
+        # do some validation and check credentials against database, etc.
+        login_window.destroy()
+        
+        # update the menu to include options for logged-in users
+        logged_in_menu = tk.Menu(menu_bar, tearoff=0)
+        logged_in_menu.add_command(label="Profile")
+        logged_in_menu.add_command(label="Logout", command=logout)
+        menu_bar.add_cascade(label="Logged In", menu=logged_in_menu)
+        menu_bar.delete("Login")
+    
+        tk.Button(login_window, text="Submit", command=submit_login).grid(row=2, column=1)
+
+def logout():
+    # remove the logged-in menu and add back the login option
+    menu_bar.delete("Logged In")
+    menu_bar.add_command(label="Login", command=login)
+
+    root = tk.Tk()
+
+# create the main menu bar
+    menu_bar = tk.Menu(root)
+
+# add some initial options
+    
+
+# add the login option
+    menu_bar.add_command(label="Login", command=login)
+
+# display the menu bar
+    root.config(menu=menu_bar)
 root.mainloop()
+menu_bar.mainloop()
