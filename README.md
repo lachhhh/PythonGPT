@@ -11,8 +11,8 @@ tkinter - $pip install tk
 
 
 
-***2023 Information.***
-This version of chat gpt has 2023 information and better interface.
+
+
 
 
 ***Voice from ai***
